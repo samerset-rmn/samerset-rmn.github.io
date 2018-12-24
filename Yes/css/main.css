@@ -110,6 +110,7 @@ img {
 	text-align: center;
 	padding: 24px 24px;
 	min-width: 300px;
+	outline: none;
 	background-color: var(--main-color);
 	border: none;
 	border-radius: 35px;

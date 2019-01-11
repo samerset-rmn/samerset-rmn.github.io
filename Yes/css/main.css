@@ -14,8 +14,6 @@
 /*Main classes*/
 
 html {
-	font-family: "Gilroy", "Arial", sans-serif;
-	font-size: 10px;
 	--main-color: #f5112c;
 	--add-color: #2429ff;
 }
@@ -23,6 +21,7 @@ html {
 body {
 	margin: 0;
 	padding: 0;
+	font-family: "Gilroy", "Arial", sans-serif;
 	font-size: 18px;
 	line-height: 1.4;
 }
@@ -117,6 +116,7 @@ img {
 	box-shadow: 0 10px 18px rgba(246, 27, 60, 0.55);
 	color: #ffffff;
 	transition: 0.3s;
+	cursor: pointer;
 }
 
 .button:hover {
@@ -136,6 +136,7 @@ img {
 	line-height: 1.2;
 	text-transform: uppercase;
 	text-align: left;
+	cursor: default;
 }
 
 .section-title--underline:before {
@@ -395,6 +396,7 @@ img {
 	z-index: 1;
 	font-size: 48px;
 	font-weight: 800;
+	cursor: default;
 }
 
 .preview__number--mobile {

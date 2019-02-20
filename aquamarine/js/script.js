@@ -11,7 +11,7 @@ function setupVideo(video) {
 	let media = video.querySelector('.video-section__media');
 	let button = video.querySelector('.video-section__button');
 	let text = video.querySelector('.video-section__desc');
-	let id = parseMediaURL(media);
+	let id = media.dataset.id;
 
 	video.addEventListener('click', () => {
 		let iframe = createIframe(id);
@@ -24,14 +24,6 @@ function setupVideo(video) {
 
 	link.removeAttribute('href');
 	video.classList.add('video-section--enabled');
-}
-
-function parseMediaURL(media) {
-	let regexp = /https:\/\/i\.ytimg\.com\/vi\/([a-zA-Z0-9_-]+)\/maxresdefault\.jpg/i;
-	let url = media.src;
-	let match = url.match(regexp);
-	
-	return match[1];
 }
 
 function createIframe(id) {

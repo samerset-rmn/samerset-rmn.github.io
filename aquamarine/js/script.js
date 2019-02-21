@@ -1,3 +1,5 @@
+// Video script
+
 function findVideos() {
 	let videos = document.querySelectorAll('.video-section');
 
@@ -44,3 +46,17 @@ function generateURL(id) {
 }
 
 findVideos();
+
+
+// Меню
+
+let menuElem = document.querySelector('.main-header__list');
+let buttonElem = document.querySelector('.main-header__nav-button');
+let overall = document.querySelector('.all-page');
+
+
+buttonElem.onclick = function() {
+  menuElem.classList.toggle('main-header__list--active');
+
+  overall.classList.toggle('blur-all');
+};

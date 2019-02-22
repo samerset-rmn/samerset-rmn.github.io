@@ -50,13 +50,15 @@ findVideos();
 
 // Меню
 
-let menuElem = document.querySelector('.main-header__list');
-let buttonElem = document.querySelector('.main-header__nav-button');
+let navElem = document.querySelector('.main-header__navigation');
+let openButton = document.querySelector('.main-header__nav-open');
+let closeButton = document.querySelector('.main-header__nav-close');
 let overall = document.querySelector('.all-page');
 
-
-buttonElem.onclick = function() {
-  menuElem.classList.toggle('main-header__list--active');
-
+function menuInteract() {
+	navElem.classList.toggle('main-header__navigation--active');
   overall.classList.toggle('blur-all');
-};
+}
+
+openButton.onclick = menuInteract;
+closeButton.onclick = menuInteract;

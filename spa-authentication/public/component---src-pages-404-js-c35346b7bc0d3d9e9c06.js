@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkspa_authentication=self.webpackChunkspa_authentication||[]).push([[883],{9616:function(t,n,u){u.r(n);u(7294);var a=u(5444),e=u(9021);n.default=function(){return(0,e.tZ)("main",null,(0,e.tZ)("h1",null,"Page not found"),(0,e.tZ)(a.rU,{to:"/"},"Go home"),".")}}}]);
+//# sourceMappingURL=component---src-pages-404-js-c35346b7bc0d3d9e9c06.js.map

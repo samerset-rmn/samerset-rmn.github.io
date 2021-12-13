@@ -1,0 +1,10 @@
+#####=== OSX ===#####
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Dependencies
+node_modules
+
+# Cache files
+.cache
